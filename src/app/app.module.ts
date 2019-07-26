@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
+import {AngularFontAwesomeModule} from "angular-font-awesome";
 
 const ROUTES: Routes = [
   {path: "", component: LoginComponent},
@@ -24,7 +25,8 @@ const ROUTES: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
